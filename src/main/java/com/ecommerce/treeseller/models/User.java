@@ -29,4 +29,8 @@ public class User {
     private Instant createdTime;
     private Instant updatedTime;
     private Instant updatedBy;
+
+    @ManyToOne
+    @JoinColumn(name = "role_id")
+    private Role role;
 }
